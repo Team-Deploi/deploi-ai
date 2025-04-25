@@ -8,7 +8,7 @@ import { RateLimiterMemory } from "rate-limiter-flexible";
 const serviceAdapter = new GroqAdapter({ model: "llama-3.3-70b-versatile" });
 
 const rateLimiter = new RateLimiterMemory({
-  points: 3, // Number of points (requests)
+  points: 50, // Number of points (requests)
   duration: 24 * 60 * 60, // Time window in seconds (1 day)
 });
 
